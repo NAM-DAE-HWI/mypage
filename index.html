@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .title {
+            background-color: gray;
+            color: white;
+            height: 540px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: url('https://modo-phinf.pstatic.net/20230325_229/1679737605276JyIbH_PNG/mosabRtR7t.png');
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .titleb {
+            font-weight: 600;
+            font-size: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0px 0px 0px;
+            text-shadow: 0px 3px 10px rgb(78, 61, 0);
+        }
+
+        .title>button {
+            width: 140px;
+            height: 50px;
+            background-color: white;
+
+            border: 1px solid rgb(255, 204, 0);
+            border-radius: 50px;
+            color: black;
+            margin-top: 15px;
+        }
+
+        .title>button:hover {
+            border: 1px solid white;
+            background-color: rgb(255, 204, 0);
+            color: white;
+
+            font-weight: 500;
+        }
+
+        .m2 {
+            font-weight: 100;
+            text-shadow: 0px 3px 13px rgba(133, 106, 0, 0.7);
+        }
+
+        .topmain {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            margin: 0px 0px 4px 0px;
+
+        }
+
+        .topmain>div>button {
+            background-color: transparent;
+            border: transparent;
+            margin: 0px 7px 0px 7px;
+            font-size: 15px;
+        }
+
+        .login {
+            color: gray;
+            font-weight: 100;
+        }
+
+        .right {
+            margin: 0px 0px 0px 120px;
+            display: flex;
+            flex-direction: row;
+
+
+        }
+
+        .topleft {
+
+            margin: 0px 150px 0px 30px;
+        }
+
+        .mycomment {
+            color: gray;
+        }
+
+        .mycards {
+            width: 1200px;
+            margin: 30px auto 30px auto;
+            
+        }
+
+        .midle {
+            color: gray;
+            font-size: 11px;
+            margin: 5px 10px 0px 10px;
+        }
+        .mypost{
+            padding: 20px 20px 20px 20px;
+            width: 500px;
+            margin: 40px auto 30px auto;
+            box-shadow: 0px 1px 4px 0px rgba(128, 128, 128, 0.47);
+        }
+        .postBtn{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .postBtn > button{
+            margin-right: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="topmain">
+        <div class="topleft">
+            <button>로고이미지</button>
+        </div>
+        <div>
+            <button>템플릿</button>
+            <button>디자인제작</button>
+            <button>포트폴리오</button>
+            <button>디자인구매</button>
+        </div>
+        <div class="right">
+            <button class="login">로그인</button>
+            <h6 class="midle">|</h6>
+            <button class="login">마이페이지</button>
+        </div>
+    </div>
+    <div class="title">
+        <h5 class="m2">가다. 그. 디자인스튜디오.</h5>
+        <h1 class="titleb">상상 속 현실이 <p>이루어지는 재미</p>
+            <!-- 상상이 현실이 되는 재미 -->
+        </h1> 
+        <button>디자인 제작</button>
+    </div>
+    <div class="mycards">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://modo-phinf.pstatic.net/20190515_140/15578571706674F1h0_PNG/mosazKBggT.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">프로젝트 이름이 들어갑니다.</h5>
+                        <p class="card-text">간단한 설명이 들어갑니다.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="mycomment">여기가 바로 리뷰칸이겠죠.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://modo-phinf.pstatic.net/20190515_140/15578571706674F1h0_PNG/mosazKBggT.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">프로젝트 이름이 들어갑니다.</h5>
+                        <p class="card-text">간단한 설명이 들어갑니다.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="mycomment">여기가 바로 리뷰칸이겠죠.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://modo-phinf.pstatic.net/20190515_140/15578571706674F1h0_PNG/mosazKBggT.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">프로젝트 이름이 들어갑니다.</h5>
+                        <p class="card-text">간단한 설명이 들어갑니다.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="mycomment">여기가 바로 리뷰칸이겠죠.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://modo-phinf.pstatic.net/20190515_140/15578571706674F1h0_PNG/mosazKBggT.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">프로젝트 이름이 들어갑니다.</h5>
+                        <p class="card-text">간단한 설명이 들어갑니다.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="mycomment">여기가 바로 리뷰칸이겠죠.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="mypost">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">프로젝트네임</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">원하시는 의뢰내용을 입력해주세요!</label>
+        </div>
+        <div class="postBtn">
+            <button type="button" class="btn btn-dark">저장</button>
+            <button type="button" class="btn btn-outline-dark">닫기</button>
+        </div>
+    </div>
+</body>
+
+</html>
